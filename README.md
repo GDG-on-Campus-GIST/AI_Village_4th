@@ -14,7 +14,7 @@ GDG GIST Cores & Mentors can guide you on your AI journey, but we are not a teac
 - Familiarity with Jupyter Notebook or any other Python IDE (e.g. PyCharm, VS Code, Cursor)
 - Understanding of <a href='https://github.com/microsoft/ML-For-Beginners'>Basic Machine Learning concepts</a>
 - Installed and configured environment for PyTorch projects (e.g., Python 3.x, PyTorch, CUDA for GPU support)
-- Basic knowledge of PyTorch syntax (Please refer to BEGINNER_GUIDE.md)
+- Basic knowledge of PyTorch syntax (Please refer to <a href='https://github.com/GDG-on-Campus-GIST/AI_Village_4th/blob/main/BEGINNER_GUIDE.md'>BEGINNER_GUIDE.md</a>)
 
 <!--
 ## Main Study - PyTorch Toy Projects
