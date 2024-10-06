@@ -22,7 +22,7 @@ You can find a detailed introduction in the [**PyTorch Overview**](https://pytor
 - **Basic Tensor Operations**: You will learn how to create and manipulate tensors.
 - **Tensor Operations**: Addition, multiplication, reshaping, etc.
 
-Check out the [**Tensor documentation**](https://pytorch.org/docs/stable/tensors.html) to get started.
+Check out the [**Tensor documentation**](https://pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html) to get started.
 
 ---
 
@@ -32,7 +32,7 @@ The `autograd` module in PyTorch is used for **automatic differentiation**. It t
 
 - **Key Concept**: Tensor operations record the computation history, allowing you to **backpropagate errors**.
 
-Learn more from the [**Autograd documentation**](https://pytorch.org/docs/stable/autograd.html).
+Learn more from the [**Autograd documentation**](https://pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html).
 
 ---
 
@@ -42,37 +42,37 @@ PyTorch provides the `torch.nn` module to help you **build and train neural netw
 
 - **Key Concepts**: Layers, activation functions, forward pass, and backpropagation.
 
-Read more about [**Neural Networks in PyTorch**](https://pytorch.org/docs/stable/nn.html).
+Read more about [**Neural Networks in PyTorch**](https://pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html).
 
 ---
 
-## 5. Optimizers
+## 5. Optimizing Paramters
 
-Training a model involves **optimizing the model's parameters**. PyTorch provides various optimization algorithms like **SGD**, **Adam**, and **RMSprop** through the `torch.optim` module.
+Once we have a model and data in place, the next crucial step is to train, validate, and test the model by optimizing its parameters. Training a model is an iterative process: the model makes predictions, calculates errors based on those predictions (loss), and updates its parameters to minimize the error using gradient descent. This optimization process is the heart of improving model accuracy and performance over time.
+
+In PyTorch, various optimization algorithms like **SGD (Stochastic Gradient Descent)**, **Adam**, and **RMSprop** are provided through the `torch.optim` module. Each of these optimizers works differently and can be more effective depending on the type of model and dataset being used.
 
 - **Key Concepts**: Gradient descent, learning rate, and optimization algorithms.
 
-Check out the [**Optimization documentation**](https://pytorch.org/docs/stable/optim.html).
+Check out the [**Optimization documentation**](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html).
+
+## 6. Transforms
+
+Transforms are essential for preprocessing data before training machine learning models. PyTorch’s `torchvision.transforms` module offers various transforms to modify both the features and labels of datasets.
+
+- **Key Concepts**: ToTensor (converts images to tensors), Lambda (custom transformations like one-hot encoding).
+
+You can learn more in the [**Transforms documentation**](https://pytorch.org/tutorials/beginner/basics/transforms_tutorial.html).
 
 ---
 
-## 6. Data Loading and Preprocessing
+## 7. Data Loading and Preprocessing
 
 Efficiently loading and processing data is crucial for training deep learning models. PyTorch provides tools for handling datasets, including the `torch.utils.data` module, which allows you to load data in **batches** and preprocess it.
 
 - **Key Concepts**: Dataset, DataLoader, batching, and transformations.
 
-You can learn more in the [**Data Loading documentation**](https://pytorch.org/docs/stable/data.html).
-
----
-
-## 7. GPU Acceleration
-
-One of the reasons PyTorch is widely used is its seamless **integration with GPUs** for faster computation. By simply moving your tensors or models to a GPU, you can leverage its power for training larger models.
-
-- **Key Concepts**: `.to(device)` for moving tensors and models to GPUs.
-
-Read more about [**using CUDA with PyTorch**](https://pytorch.org/docs/stable/notes/cuda.html).
+You can learn more in the [**Data Loading documentation**](https://pytorch.org/tutorials/beginner/basics/data_tutorial.html).
 
 ---
 
@@ -82,7 +82,7 @@ Once your model is trained, you can **save it for future use** and load it whene
 
 - **Key Concepts**: `torch.save()`, `torch.load()`, and `state_dict`. 💾
 
-See the official guide on [**Saving and Loading Models**](https://pytorch.org/docs/stable/notes/serialization.html).
+See the official guide on [**Saving and Loading Models**](https://pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html).
 
 ---
 
